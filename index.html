@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная</title>
+  <!-- STYLES -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+  <body>
+    <div class="wrapper">
+      <!-- .header -->
+<header class="header">
+  <div class="header__container">
+    <div class="header__body">
+      <div class="header__logo">
+        <img src="img/logo.png" alt="Top Design" />
+      </div>
+      <div class="header__menu">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li>
+              <a href="#!"
+                ><span>Услуги и цены</span><span class="_icon-down"></span
+              ></a>
+            </li>
+            <li>
+              <a href="#!"><span>Портфолио</span></a>
+            </li>
+            <li>
+              <a href="#!"><span>О компании</span></a>
+            </li>
+            <li>
+              <a href="#!"><span>Контакты</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__addly">
+          <div class="header__contacts">
+            <a href="tel:+79998887766" class="header__phone">
+              +7 (999) 888-77-66
+            </a>
+            <div class="header__socials">
+              <a href="#!" class="header__social"
+                ><svg
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.0380859 16L1.16275 11.8913C0.468753 10.6887 0.104086 9.32533 0.104753 7.92733C0.106753 3.55667 3.66342 0 8.03342 0C10.1541 0.000666667 12.1448 0.826667 13.6421 2.32533C15.1388 3.824 15.9628 5.816 15.9621 7.93467C15.9601 12.306 12.4034 15.8627 8.03342 15.8627C6.70675 15.862 5.39942 15.5293 4.24142 14.8973L0.0380859 16ZM4.43609 13.462C5.55342 14.1253 6.62009 14.5227 8.03075 14.5233C11.6628 14.5233 14.6214 11.5673 14.6234 7.93333C14.6248 4.292 11.6801 1.34 8.03609 1.33867C4.40142 1.33867 1.44475 4.29467 1.44342 7.928C1.44275 9.41133 1.87742 10.522 2.60742 11.684L1.94142 14.116L4.43609 13.462ZM12.0274 9.81933C11.9781 9.73667 11.8461 9.68733 11.6474 9.588C11.4494 9.48867 10.4754 9.00933 10.2934 8.94333C10.1121 8.87733 9.98009 8.844 9.84742 9.04267C9.71542 9.24067 9.33542 9.68733 9.22009 9.81933C9.10475 9.95133 8.98875 9.968 8.79075 9.86867C8.59275 9.76933 7.95408 9.56067 7.19742 8.88533C6.60875 8.36 6.21075 7.71133 6.09542 7.51267C5.98009 7.31467 6.08342 7.20733 6.18209 7.10867C6.27142 7.02 6.38009 6.87733 6.47942 6.76133C6.58009 6.64667 6.61275 6.564 6.67942 6.43133C6.74542 6.29933 6.71275 6.18333 6.66275 6.084C6.61275 5.98533 6.21675 5.01 6.05209 4.61333C5.89075 4.22733 5.72742 4.27933 5.60609 4.27333L5.22609 4.26667C5.09409 4.26667 4.87942 4.316 4.69809 4.51467C4.51675 4.71333 4.00475 5.192 4.00475 6.16733C4.00475 7.14267 4.71475 8.08467 4.81342 8.21667C4.91275 8.34867 6.21009 10.35 8.19742 11.208C8.67008 11.412 9.03942 11.534 9.32675 11.6253C9.80142 11.776 10.2334 11.7547 10.5748 11.704C10.9554 11.6473 11.7468 11.2247 11.9121 10.762C12.0774 10.2987 12.0774 9.902 12.0274 9.81933Z"
+                    fill="white"
+                  />
+                </svg> </a
+              ><a href="#!" class="header__social">
+                <svg
+                  viewBox="0 0 16 14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.53263 10.9773C8.55635 11.0021 8.58006 11.0021 8.58006 11.0268C9.74205 11.9163 10.904 12.8058 12.0423 13.72C12.2083 13.8435 12.3743 13.9176 12.564 13.9671C12.9434 14.0659 13.2043 13.9423 13.3703 13.5964C13.4414 13.4482 13.4889 13.2752 13.5126 13.127C13.726 12.1386 13.9157 11.1256 14.1291 10.1373C14.4611 8.4818 14.7931 6.85105 15.1488 5.19559C15.4097 3.88605 15.6942 2.5765 15.9551 1.24225C16.0025 1.01988 16.0262 0.797502 15.9551 0.550418C15.8602 0.179793 15.552 -0.0425822 15.22 0.00683446C15.1251 0.0315428 15.0065 0.0562512 14.9117 0.0809595C12.73 0.97046 10.5246 1.85996 8.34292 2.72475C6.0901 3.63896 3.83727 4.52846 1.56073 5.44267C1.20502 5.59092 0.8256 5.73917 0.469891 5.91213C0.327607 5.98626 0.185324 6.08509 0.090468 6.20863C-0.0755297 6.45572 -0.00438784 6.67809 0.232752 6.80163C0.351321 6.85105 0.469891 6.90047 0.588461 6.92517C1.75044 7.2958 2.93614 7.66642 4.09813 8.03705C4.16927 8.06176 4.2167 8.06176 4.28784 8.01234C6.89637 6.35688 9.45748 4.67671 12.0186 2.99655C12.2557 2.8483 12.4692 2.70005 12.7063 2.5518C12.8249 2.47767 12.9434 2.42825 13.0857 2.45296C13.2043 2.47767 13.228 2.55179 13.1569 2.65063C13.1331 2.70005 13.0857 2.72475 13.0383 2.77417C11.6154 4.13313 10.1689 5.49209 8.74606 6.85105C7.93979 7.61701 7.13351 8.38297 6.30352 9.17363C6.27981 9.19834 6.25609 9.22305 6.25609 9.24776C6.20867 9.81605 6.16124 10.3843 6.13753 10.9526C6.0901 11.5703 6.04267 12.1633 5.99524 12.7811C5.99524 12.8799 5.97153 13.0034 5.97153 13.1023C5.99524 13.1023 6.01896 13.1023 6.04267 13.1023C6.06638 13.1023 6.0901 13.1023 6.11381 13.1023C6.37467 13.0528 6.58809 12.9046 6.7778 12.7069C7.01494 12.4846 7.22837 12.2622 7.44179 12.0398C7.82122 11.6939 8.17693 11.348 8.53263 10.9773Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <a href="#!" class="header__btn btn">
+            <span>хочу проект!</span>
+          </a>
+        </div>
+      </div>
+      <div class="header__burger"><span></span></div>
+    </div>
+  </div>
+</header>
+<!-- /.header -->
+
+      <!-- .progress -->
+<div class="progress">
+  <div class="progress__body">
+    <div class="progress__number"></div>
+    <div class="progress__element"></div>
+  </div>
+</div>
+<!-- /.progress -->
+
+      <!-- .main -->
+      <main class="main">
+        <!-- .intro -->
+<section class="intro" data-section="dark">
+  <div class="intro__top-slogan slogan">
+    design
+  </div>
+  <div class="intro__bottom-slogan slogan">
+    top
+  </div>
+  <div class="intro__top-left-corner">
+    <img src="img/index/intro/top_left_corner.svg" alt="">
+  </div>
+  <div class="intro__top-center">
+    <img src="img/index/intro/top_center.svg" alt="">
+  </div>
+  <div class="intro__top-right-corner">
+    <img src="img/index/intro/top_right_corner.svg" alt="">
+  </div>
+   <div class="intro__bottom-right-corner">
+    <img src="img/index/intro/bottom_right_corner.svg" alt="">
+  </div>
+  <div class="intro__bottom-left-corner">
+    <img src="img/index/intro/bottom_left_corner.svg" alt="">
+  </div>
+  <div class="intro__container">
+    <div class="intro__body">
+      <div class="intro__content">
+        <div class="intro__content-slogan slogan">
+          <span>top</span>
+          <span>design</span>
+        </div>
+        <div class="intro__uptitle">
+          Создаем продающий интернет-ресурс в кратчайшие сроки!
+        </div>
+        <h1 class="intro__title">
+          создаем <br />
+          продвигаем <br />
+          помогаем
+        </h1>
+        <a href="#!" class="intro__btn btn btn_lined">
+          <span>рассчитать стоимость</span>
+        </a>
+        <div class="intro__socials">
+          <a href="#!" class="intro__social">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.85"
+                y="0.85"
+                width="16.3"
+                height="16.3"
+                rx="3.15"
+                fill="white"
+                stroke="white"
+                stroke-width="1.7"
+              />
+              <path
+                d="M9 4.5C6.525 4.5 4.5 6.525 4.5 9C4.5 11.475 6.525 13.5 9 13.5C11.475 13.5 13.5 11.475 13.5 9C13.5 6.525 11.475 4.5 9 4.5ZM9 12C7.35 12 6 10.65 6 9C6 7.35 7.35 6 9 6C10.65 6 12 7.35 12 9C12 10.65 10.65 12 9 12Z"
+                fill="#232323"
+              />
+              <path
+                d="M13.582 5.625C14.2034 5.625 14.707 5.12132 14.707 4.5C14.707 3.87868 14.2034 3.375 13.582 3.375C12.9607 3.375 12.457 3.87868 12.457 4.5C12.457 5.12132 12.9607 5.625 13.582 5.625Z"
+                fill="#232323"
+              />
+            </svg> </a
+          ><a href="#!" class="intro__social">
+            <svg
+              width="28"
+              height="18"
+              viewBox="0 0 28 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.82609 2.61116C1.52174 2.61116 1.21739 2.61116 0.913044 2.61116C0.710145 2.61116 0.507246 2.71302 0.304348 2.71302C0.101449 2.81487 0 3.01859 0 3.22231C0 3.32417 0 3.32417 0 3.32417C0.101449 3.62975 0.202899 3.83347 0.304348 4.13905C0.913044 5.36136 1.52174 6.58367 2.13043 7.80598C3.04348 9.33387 3.95652 10.8618 5.07246 12.2878C5.57971 12.899 6.18841 13.5101 6.7971 14.1213C7.50725 14.6306 8.21739 15.1399 9.02899 15.5473C10.1449 16.0566 10.4493 15.9547 11.6667 15.8529C12.0725 15.8529 12.4783 15.8529 12.9855 15.8529C13.087 15.8529 14.2029 15.8529 14.3043 15.8529C14.6087 15.751 14.7101 16.0566 14.8116 15.751C14.8116 15.6492 14.913 15.4454 14.913 15.3436C14.913 15.038 15.0145 14.6306 15.0145 14.325C15.1159 14.0194 15.2174 13.7138 15.4203 13.4082C15.7246 13.0008 16.029 13.0008 16.4348 13.2045C16.7391 13.3064 16.942 13.5101 17.1449 13.8157C17.5507 14.325 18.058 14.7324 18.4638 15.2417C18.7681 15.5473 19.1739 15.751 19.5797 15.9547C19.5797 16.0566 20.4928 15.9547 20.8986 15.9547C21.2029 15.9547 21.913 15.9547 22.2174 15.9547C23.029 15.9547 22.7246 15.9547 23.5362 15.9547C23.8406 15.9547 24.5507 15.9547 24.8551 15.9547C25.2609 15.751 25.6667 15.6492 25.4638 15.2417C25.3623 15.038 25.3623 14.9361 25.2609 14.7324C24.9565 14.2231 24.5507 13.7138 24.1449 13.3064C23.5362 12.6952 22.9275 12.1859 22.4203 11.5748C22.1159 11.3711 21.913 11.0655 21.7101 10.7599C21.4058 10.4543 21.4058 10.0469 21.6087 9.74131C21.7101 9.63945 21.7101 9.43573 21.8116 9.33387C22.2174 8.72272 22.7246 8.21342 23.1304 7.60226C23.7391 6.78739 24.4493 5.97251 24.9565 5.05578C25.1594 4.64834 25.3623 4.24091 25.5652 3.83347C25.5652 3.73161 25.6667 3.52789 25.6667 3.42603C25.6667 3.12045 25.5652 2.91673 25.1594 2.81487C24.8551 2.71302 24.6522 2.71302 24.3478 2.71302C23.4348 2.71302 22.5217 2.71302 21.6087 2.71302C21.2029 2.71302 20.7971 2.71302 20.3913 2.71302C20.087 2.71302 19.8841 2.81487 19.7826 3.01859C19.6812 3.12045 19.6812 3.22231 19.6812 3.32417C19.2754 4.44462 18.7681 5.56508 18.058 6.58367C17.6522 7.29669 17.2464 7.90784 16.6377 8.519C16.4348 8.72272 16.2319 8.92643 15.9275 9.02829C15.8261 9.13015 15.6232 9.0283 15.5217 8.92644C15.4203 8.82458 15.3188 8.72272 15.3188 8.62086C15.1159 8.31528 15.1159 8.0097 15.1159 7.70412C15.1159 7.19483 15.1159 6.78739 15.1159 6.27809C15.1159 5.87066 15.1159 5.36136 15.1159 4.95392C15.1159 4.7502 15.1159 4.54648 15.1159 4.44462C15.1159 4.03719 15.1159 3.52789 15.1159 3.12045C15.0145 2.61116 14.8116 2.30558 14.3043 2.20372C13.6957 2 13.1884 2 12.6812 2C11.971 2 11.1594 2 10.4493 2C10.1449 2 9.73913 2.10186 9.43478 2.20372C9.13044 2.30558 8.01449 2.40744 7.81159 2.71302C7.71015 2.81487 8.62319 2.81487 8.62319 2.91673C8.62319 3.01859 8.62319 3.01859 8.72464 3.12045C8.82609 3.12045 7.71015 4.03719 7.91304 4.13905C8.31884 4.24091 9.73913 3.62975 9.94203 4.03719C10.0435 4.34276 10.0435 4.54648 10.1449 4.85206C10.1449 5.2595 10.2464 5.56508 10.2464 5.97251C10.2464 6.68553 10.2464 7.5004 10.1449 8.21342C10.1449 8.519 10.0435 8.72272 9.84058 8.92644C9.53623 8.92644 9.43478 9.02829 9.23189 9.02829C9.13044 9.02829 8.92754 8.92644 8.82609 8.82458C8.52174 8.72272 8.31884 8.41714 8.11594 8.21342C7.50725 7.29669 6.89855 6.37995 6.39131 5.46322C6.08696 4.7502 5.78261 4.03719 5.37681 3.22231C5.17391 2.81487 4.86957 2.61116 4.36232 2.61116C3.55073 2.61116 2.73913 2.61116 1.82609 2.61116Z"
+                fill="white"
+              />
+            </svg> </a
+          ><a href="#!" class="intro__social">
+            <svg
+              width="28"
+              height="18"
+              viewBox="0 0 28 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25.6664 2.4H17.4998V0H25.6664V2.4ZM27.68 14.4C27.1644 15.9564 25.3129 18 21.7289 18C18.1426 18 15.2377 15.9252 15.2377 11.19C15.2377 6.498 17.9501 4.086 21.6146 4.086C25.2102 4.086 27.4059 6.2244 27.8854 9.3972C27.9764 10.0044 28.0125 10.8228 27.9962 11.9652H18.6315C18.7831 15.8184 22.6949 15.9396 23.9841 14.4H27.68ZM18.7131 9.6H24.5056C24.3831 7.7436 23.1803 6.9372 21.6158 6.9372C19.9055 6.9372 18.9593 7.8588 18.7131 9.6ZM7.54359 17.9856H0V0.0251999H8.11175C14.5003 0.1224 14.6217 6.558 11.285 8.3124C15.3228 9.8244 15.4582 17.9856 7.54359 17.9856ZM3.49996 7.2H7.68125C10.6072 7.2 11.0715 3.6 7.31725 3.6H3.49996V7.2ZM7.45609 10.8H3.49996V14.4192H7.39775C10.9619 14.4192 10.7437 10.8 7.45609 10.8Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="intro__img">
+        <img src="img/index/intro/1.png" alt="" />
+        <div class="intro__circle intro__circle_lg">
+          <img src="img/index/intro/circle.svg" alt="">
+        </div>
+        <div class="intro__circle intro__circle_md">
+          <img src="img/index/intro/circle_md.svg" alt="">
+        </div>
+        <div class="intro__circle intro__circle_sm">
+          <img src="img/index/intro/circle_sm.svg" alt="">
+        </div>
+        <div class="intro__circle intro__circle_tn">
+          <img src="img/index/intro/circle_tn.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /.intro -->
+
+        <!-- .reason -->
+<section class="reason" data-section="light">
+  <div class="reason__fluid" style="background-image: url('img/index/reason/bg.png');">
+    <div class="reason__slogan slogan">
+      design
+    </div>
+    <div class="reason__container">
+      <div class="reason__body">
+        <div class="reason__content">
+          <h2 class="reason__title title">
+            6 причин сотрудничать с <b>TopDesign</b>
+          </h2>
+          <div class="reason__info">
+            <p>
+              Вы уже видели много сайтов, рекламы, которые кричат что они лучшие
+              и что вам надо заказать сайт у них.
+            </p>
+            <p>
+              Мы не кричим об этом, а говорим о фактах. Ниже мы очень кратко
+              объяснили почему делаем превосходные сайты. Прочитайте все за
+              минуту или сразу посмотрите наши примеры работ:
+            </p>
+          </div>
+          <a href="#!" class="reason__btn btn btn_lined">
+            <span>читать о нас подробнее</span>
+          </a>
+        </div>
+        <div class="reason__grid">
+          <div class="reason__item item-reason">
+            <div class="item-reason__icon">
+              <img src="img/index/reason/1.svg" alt="" />
+            </div>
+            <div class="item-reason__title">В сроки сдаем работу</div>
+            <p class="item-reason__text">
+              Расписываем каждый этап по срокам и пользуемся принципом
+              несдвигаемых дедлайнов
+            </p>
+          </div>
+          <div class="reason__item item-reason">
+            <div class="item-reason__icon">
+              <img src="img/index/reason/2.svg" alt="" />
+            </div>
+            <div class="item-reason__title">В сроки сдаем работу</div>
+            <p class="item-reason__text">
+              Расписываем каждый этап по срокам и пользуемся принципом
+              несдвигаемых дедлайнов
+            </p>
+          </div>
+          <div class="reason__item item-reason">
+            <div class="item-reason__icon">
+              <img src="img/index/reason/3.svg" alt="" />
+            </div>
+            <div class="item-reason__title">В сроки сдаем работу</div>
+            <p class="item-reason__text">
+              Расписываем каждый этап по срокам и пользуемся принципом
+              несдвигаемых дедлайнов
+            </p>
+          </div>
+          <div class="reason__item item-reason">
+            <div class="item-reason__icon">
+              <img src="img/index/reason/4.svg" alt="" />
+            </div>
+            <div class="item-reason__title">В сроки сдаем работу</div>
+            <p class="item-reason__text">
+              Расписываем каждый этап по срокам и пользуемся принципом
+              несдвигаемых дедлайнов
+            </p>
+          </div>
+          <div class="reason__item item-reason">
+            <div class="item-reason__icon">
+              <img src="img/index/reason/5.svg" alt="" />
+            </div>
+            <div class="item-reason__title">В сроки сдаем работу</div>
+            <p class="item-reason__text">
+              Расписываем каждый этап по срокам и пользуемся принципом
+              несдвигаемых дедлайнов
+            </p>
+          </div>
+          <div class="reason__item item-reason">
+            <div class="item-reason__icon">
+              <img src="img/index/reason/6.svg" alt="" />
+            </div>
+            <div class="item-reason__title">В сроки сдаем работу</div>
+            <p class="item-reason__text">
+              Расписываем каждый этап по срокам и пользуемся принципом
+              несдвигаемых дедлайнов
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /.reason -->
+
+        <!-- .service -->
+<section class="service" data-section="dark">
+  <div class="service__bg">
+    <img src="img/index/service/bg.png" alt="" />
+  </div>
+  <div class="service__bottom-circle">
+    <img src="img/index/service/bottom_circle.svg" alt="" />
+  </div>
+  <div class="service__fluid">
+    <div class="service__top-circle">
+      <img src="img/index/service/top_circle.svg" alt="" />
+    </div>
+    <div class="service__container">
+      <div class="service__body">
+        <h2 class="service__title title">наши услуги</h2>
+        <div class="service__grid">
+          <div class="service__item item-service">
+            <div class="item-service__img">
+              <img src="img/index/service/1.svg" alt="" />
+            </div>
+            <div class="item-service__title">
+              Контекстная реклама в яндексе и гугле
+            </div>
+            <p class="item-service__text">
+              Расписываем каждый этап по срокам и пользуемся принципом
+              несдвигаемых дедлайнов
+            </p>
+            <a href="#!" class="item-service__link">подробнее</a>
+          </div>
+          <div class="service__item item-service">
+            <div class="item-service__img">
+              <img src="img/index/service/2.svg" alt="" />
+            </div>
+            <div class="item-service__title">
+              Контекстная реклама в яндексе и гугле
+            </div>
+            <p class="item-service__text">
+              Расписываем каждый этап по срокам и пользуемся принципом
+              несдвигаемых дедлайнов
+            </p>
+            <a href="#!" class="item-service__link">подробнее</a>
+          </div>
+          <div class="service__item item-service">
+            <div class="item-service__img">
+              <img src="img/index/service/3.svg" alt="" />
+            </div>
+            <div class="item-service__title">
+              Контекстная реклама в яндексе и гугле
+            </div>
+            <p class="item-service__text">
+              Расписываем каждый этап по срокам и пользуемся принципом
+              несдвигаемых дедлайнов
+            </p>
+            <a href="#!" class="item-service__link">подробнее</a>
+          </div>
+          <div class="service__item item-service">
+            <div class="item-service__img">
+              <img src="img/index/service/4.svg" alt="" />
+            </div>
+            <div class="item-service__title">
+              Контекстная реклама в яндексе и гугле
+            </div>
+            <p class="item-service__text">
+              Расписываем каждый этап по срокам и пользуемся принципом
+              несдвигаемых дедлайнов
+            </p>
+            <a href="#!" class="item-service__link">подробнее</a>
+          </div>
+          <div class="service__item item-service">
+            <div class="item-service__img">
+              <img src="img/index/service/5.svg" alt="" />
+            </div>
+            <div class="item-service__title">
+              Контекстная реклама в яндексе и гугле
+            </div>
+            <p class="item-service__text">
+              Расписываем каждый этап по срокам и пользуемся принципом
+              несдвигаемых дедлайнов
+            </p>
+            <a href="#!" class="item-service__link">подробнее</a>
+          </div>
+          <div class="service__item item-service">
+            <div class="item-service__img">
+              <img src="img/index/service/6.svg" alt="" />
+            </div>
+            <div class="item-service__title">
+              Контекстная реклама в яндексе и гугле
+            </div>
+            <p class="item-service__text">
+              Расписываем каждый этап по срокам и пользуемся принципом
+              несдвигаемых дедлайнов
+            </p>
+            <a href="#!" class="item-service__link">подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /.service -->
+
+        <!-- .project -->
+<section class="project" data-section="light">
+  <div class="project__slogan slogan">
+    DESIGN
+  </div>
+  <div class="project__container">
+    <div class="project__body">
+      <h2 class="project__title title">недавнИЕ ПРОЕКТЫ</h2>
+      <div class="project__outer">
+        <div class="project__slider swiper">
+          <div class="project__wrapper swiper-wrapper">
+            <div class="project__slide slide-project swiper-slide">
+              <div class="slide-project__img">
+                <img src="img/index/project/1.png" alt="" />
+              </div>
+              <div class="slide-project__content">
+                <div class="slide-project__title">Bravolli!</div>
+                <div class="slide-project__info">
+                  <p>
+                    Превращаем набор требований и пожеланий в удобный продукт,
+                    который успешно развивается и растет с нашей поддержкой,
+                    зарабатывает деньги и выигрывает конкурсы.
+                  </p>
+                  <p>
+                    Превращаем набор требований и пожеланий в удобный продукт,
+                    который успешно развивается и растет с нашей поддержкой,
+                    зарабатывает деньги и выигрывает конкурсы.
+                  </p>
+                </div>
+                <a href="#!" class="slide-project__link">подробнее</a>
+              </div>
+            </div>
+            <div class="project__slide slide-project swiper-slide">
+              <div class="slide-project__img">
+                <img src="img/index/project/1.png" alt="" />
+              </div>
+              <div class="slide-project__content">
+                <div class="slide-project__title">Bravolli!</div>
+                <div class="slide-project__info">
+                  <p>
+                    Превращаем набор требований и пожеланий в удобный продукт,
+                    который успешно развивается и растет с нашей поддержкой,
+                    зарабатывает деньги и выигрывает конкурсы.
+                  </p>
+                  <p>
+                    Превращаем набор требований и пожеланий в удобный продукт,
+                    который успешно развивается и растет с нашей поддержкой,
+                    зарабатывает деньги и выигрывает конкурсы.
+                  </p>
+                </div>
+                <a href="#!" class="slide-project__link">подробнее</a>
+              </div>
+            </div>
+            <div class="project__slide slide-project swiper-slide">
+              <div class="slide-project__img">
+                <img src="img/index/project/1.png" alt="" />
+              </div>
+              <div class="slide-project__content">
+                <div class="slide-project__title">Bravolli!</div>
+                <div class="slide-project__info">
+                  <p>
+                    Превращаем набор требований и пожеланий в удобный продукт,
+                    который успешно развивается и растет с нашей поддержкой,
+                    зарабатывает деньги и выигрывает конкурсы.
+                  </p>
+                  <p>
+                    Превращаем набор требований и пожеланий в удобный продукт,
+                    который успешно развивается и растет с нашей поддержкой,
+                    зарабатывает деньги и выигрывает конкурсы.
+                  </p>
+                </div>
+                <a href="#!" class="slide-project__link"
+                  >подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project__next">
+          <svg
+            viewBox="0 0 19 36"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.9853 18.3232C18.9183 19.0311 18.6378 19.7006 18.1829 20.2394L6.01693 34.7094C5.44458 35.4375 4.60675 35.8975 3.69551 35.985C2.78417 36.072 1.87762 35.7788 1.18218 35.1717C0.486778 34.5652 0.0624696 33.6967 0.00635924 32.7656C-0.0497435 31.8341 0.267084 30.9195 0.884686 30.2303L11.1711 18L0.884687 5.76971C0.267543 5.08047 -0.0492788 4.16583 0.00683165 3.23439C0.0624652 2.3034 0.48678 1.43488 1.18218 0.828277C1.87758 0.221229 2.78463 -0.0719612 3.69599 0.0150292C4.60733 0.102508 5.4446 0.562477 6.01693 1.29063L18.1829 15.7606C18.7802 16.4685 19.0697 17.3933 18.9858 18.3228L18.9853 18.3232Z"
+            />
+          </svg>
+        </div>
+        <div class="project__pagination"></div>
+      </div>
+      <a href="#!" class="project__btn btn">
+        <span>смотреть все работы</span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- /.project -->
+
+        <!-- .trust -->
+<section class="trust" data-section="light">
+  <div class="trust__fluid">
+    <div class="trust__slogan slogan">top</div>
+    <div class="trust__container">
+      <div class="trust__body">
+        <div class="trust__content">
+          <h2 class="trust__title title">нам доверяют</h2>
+          <div class="trust__info">
+            <p>
+              Поработали с крупнейшими страховыми компаниями, банками, ритейл,
+              автомобильными брендами, государственными проектами, e-commerce,
+              СМИ и другими.
+            </p>
+            <p>
+              Поработали с крупнейшими страховыми компаниями, банками, ритейл,
+              автомобильными брендами, государственными проектами, e-commerce,
+              СМИ и другими.
+            </p>
+          </div>
+          <a href="#!" class="trust__btn btn btn_lined">
+            <span>читать о нас подробнее</span>
+          </a>
+        </div>
+        <div class="trust__grid">
+          <div class="trust__item">
+            <img src="img/index/trust/1.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/2.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/3.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/4.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/5.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/6.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/7.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/8.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/9.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/10.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/3.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/4.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/11.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/2.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/5.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/6.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/1.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/2.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/3.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/4.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/5.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/6.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/7.png" alt="">
+          </div>
+          <div class="trust__item">
+            <img src="img/index/trust/8.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /.trust -->
+
+      </main>
+      <!-- /.main -->
+
+      <!-- .footer -->
+<footer class="footer" data-section="dark">
+  <div class="footer__slogan slogan">design</div>
+  <div class="footer__top-circle">
+    <img src="img/index/footer/top_circle.svg" alt="" />
+  </div>
+  <div class="footer__top top-footer">
+    <div class="top-footer__bg">
+      <img src="img/index/footer/bg.svg" alt="" />
+    </div>
+    <div class="top-footer__bottom-circle">
+      <img src="img/index/footer/bottom_circle.svg" alt="" />
+    </div>
+    <div class="top-footer__container">
+      <div class="top-footer__body">
+        <h2 class="top-footer__title title">
+          расскажите <br />
+          о вашем проекте
+        </h2>
+        <div class="top-footer__flex">
+          <form class="top-footer__form form-footer">
+            <div class="form-footer__flex">
+              <div class="form-footer__inputs">
+                <input
+                  type="text"
+                  class="form-footer__input"
+                  placeholder="Ваше имя"
+                />
+                <input
+                  type="tel"
+                  class="form-footer__input"
+                  placeholder="Телефон"
+                />
+                <input
+                  type="email"
+                  class="form-footer__input"
+                  placeholder="E-mail"
+                />
+                <textarea
+                  placeholder="Текст"
+                  class="form-footer__textarea"
+                ></textarea>
+              </div>
+              <div class="form-footer__radios">
+                <div class="form-footer__label">Выберите услуги</div>
+                <div class="form-footer__radio">
+                  <input type="checkbox" id="checkbox1" />
+                  <label for="checkbox1"><span>Разработка сайта</span></label>
+                </div>
+                <div class="form-footer__radio">
+                  <input type="checkbox" id="checkbox2" />
+                  <label for="checkbox2"
+                    ><span>Контекстная реклама</span></label
+                  >
+                </div>
+                <div class="form-footer__radio">
+                  <input type="checkbox" id="checkbox3" />
+                  <label for="checkbox3"><span>Продвижение</span></label>
+                </div>
+                <div class="form-footer__radio">
+                  <input type="checkbox" id="checkbox4" />
+                  <label for="checkbox4"
+                    ><span>Контекстная реклама</span></label
+                  >
+                </div>
+                <div class="form-footer__radio">
+                  <input type="checkbox" id="checkbox5" />
+                  <label for="checkbox5"><span>Разработка сайта</span></label>
+                </div>
+                <div class="form-footer__radio">
+                  <input type="checkbox" id="checkbox6" />
+                  <label for="checkbox6"
+                    ><span>Контекстная реклама</span></label
+                  >
+                </div>
+              </div>
+            </div>
+            <button class="form-footer__btn btn btn_lined">
+              <span>Отправить</span>
+            </button>
+          </form>
+          <div class="top-footer__info info-footer">
+            <div class="info-footer__logo">
+              <img src="img/logo.png" alt="Top Design" />
+            </div>
+            <a href="tel:+79998887766" class="info-footer__phone"
+              >+7 (999) 888-77-66</a
+            >
+            <div class="info-footer__contacts">
+              <a href="#!" class="info-footer__contact"
+                ><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.0380859 16L1.16275 11.8913C0.468753 10.6887 0.104086 9.32533 0.104753 7.92733C0.106753 3.55667 3.66342 0 8.03342 0C10.1541 0.000666667 12.1448 0.826667 13.6421 2.32533C15.1388 3.824 15.9628 5.816 15.9621 7.93467C15.9601 12.306 12.4034 15.8627 8.03342 15.8627C6.70675 15.862 5.39942 15.5293 4.24142 14.8973L0.0380859 16ZM4.43609 13.462C5.55342 14.1253 6.62009 14.5227 8.03075 14.5233C11.6628 14.5233 14.6214 11.5673 14.6234 7.93333C14.6248 4.292 11.6801 1.34 8.03609 1.33867C4.40142 1.33867 1.44475 4.29467 1.44342 7.928C1.44275 9.41133 1.87742 10.522 2.60742 11.684L1.94142 14.116L4.43609 13.462ZM12.0274 9.81933C11.9781 9.73667 11.8461 9.68733 11.6474 9.588C11.4494 9.48867 10.4754 9.00933 10.2934 8.94333C10.1121 8.87733 9.98009 8.844 9.84742 9.04267C9.71542 9.24067 9.33542 9.68733 9.22009 9.81933C9.10475 9.95133 8.98875 9.968 8.79075 9.86867C8.59275 9.76933 7.95408 9.56067 7.19742 8.88533C6.60875 8.36 6.21075 7.71133 6.09542 7.51267C5.98009 7.31467 6.08342 7.20733 6.18209 7.10867C6.27142 7.02 6.38009 6.87733 6.47942 6.76133C6.58009 6.64667 6.61275 6.564 6.67942 6.43133C6.74542 6.29933 6.71275 6.18333 6.66275 6.084C6.61275 5.98533 6.21675 5.01 6.05209 4.61333C5.89075 4.22733 5.72742 4.27933 5.60609 4.27333L5.22609 4.26667C5.09409 4.26667 4.87942 4.316 4.69809 4.51467C4.51675 4.71333 4.00475 5.192 4.00475 6.16733C4.00475 7.14267 4.71475 8.08467 4.81342 8.21667C4.91275 8.34867 6.21009 10.35 8.19742 11.208C8.67008 11.412 9.03942 11.534 9.32675 11.6253C9.80142 11.776 10.2334 11.7547 10.5748 11.704C10.9554 11.6473 11.7468 11.2247 11.9121 10.762C12.0774 10.2987 12.0774 9.902 12.0274 9.81933Z"
+                    fill="white"
+                  />
+                </svg> </a
+              ><a href="#!" class="info-footer__contact">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.53263 10.9773C8.55635 11.0021 8.58006 11.0021 8.58006 11.0268C9.74205 11.9163 10.904 12.8058 12.0423 13.72C12.2083 13.8435 12.3743 13.9176 12.564 13.9671C12.9434 14.0659 13.2043 13.9423 13.3703 13.5964C13.4414 13.4482 13.4889 13.2752 13.5126 13.127C13.726 12.1386 13.9157 11.1256 14.1291 10.1373C14.4611 8.4818 14.7931 6.85105 15.1488 5.19559C15.4097 3.88605 15.6942 2.5765 15.9551 1.24225C16.0025 1.01988 16.0262 0.797502 15.9551 0.550418C15.8602 0.179793 15.552 -0.0425822 15.22 0.00683446C15.1251 0.0315428 15.0065 0.0562512 14.9117 0.0809595C12.73 0.97046 10.5246 1.85996 8.34292 2.72475C6.0901 3.63896 3.83727 4.52846 1.56073 5.44267C1.20502 5.59092 0.8256 5.73917 0.469891 5.91213C0.327607 5.98626 0.185324 6.08509 0.090468 6.20863C-0.0755297 6.45572 -0.00438784 6.67809 0.232752 6.80163C0.351321 6.85105 0.469891 6.90047 0.588461 6.92517C1.75044 7.2958 2.93614 7.66642 4.09813 8.03705C4.16927 8.06176 4.2167 8.06176 4.28784 8.01234C6.89637 6.35688 9.45748 4.67671 12.0186 2.99655C12.2557 2.8483 12.4692 2.70005 12.7063 2.5518C12.8249 2.47767 12.9434 2.42825 13.0857 2.45296C13.2043 2.47767 13.228 2.55179 13.1569 2.65063C13.1331 2.70005 13.0857 2.72475 13.0383 2.77417C11.6154 4.13313 10.1689 5.49209 8.74606 6.85105C7.93979 7.61701 7.13351 8.38297 6.30352 9.17363C6.27981 9.19834 6.25609 9.22305 6.25609 9.24776C6.20867 9.81605 6.16124 10.3843 6.13753 10.9526C6.0901 11.5703 6.04267 12.1633 5.99524 12.7811C5.99524 12.8799 5.97153 13.0034 5.97153 13.1023C5.99524 13.1023 6.01896 13.1023 6.04267 13.1023C6.06638 13.1023 6.0901 13.1023 6.11381 13.1023C6.37467 13.0528 6.58809 12.9046 6.7778 12.7069C7.01494 12.4846 7.22837 12.2622 7.44179 12.0398C7.82122 11.6939 8.17693 11.348 8.53263 10.9773Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+            <a href="mailto:topsmm@site.com" class="info-footer__mail"
+              >topsmm@site.com</a
+            >
+            <div class="info-footer__socials">
+              <a href="#!" class="info-footer__social"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.85"
+                    y="0.85"
+                    width="16.3"
+                    height="16.3"
+                    rx="3.15"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="1.7"
+                  />
+                  <path
+                    d="M9 4.5C6.525 4.5 4.5 6.525 4.5 9C4.5 11.475 6.525 13.5 9 13.5C11.475 13.5 13.5 11.475 13.5 9C13.5 6.525 11.475 4.5 9 4.5ZM9 12C7.35 12 6 10.65 6 9C6 7.35 7.35 6 9 6C10.65 6 12 7.35 12 9C12 10.65 10.65 12 9 12Z"
+                    fill="#232323"
+                  />
+                  <path
+                    d="M13.582 5.625C14.2034 5.625 14.707 5.12132 14.707 4.5C14.707 3.87868 14.2034 3.375 13.582 3.375C12.9607 3.375 12.457 3.87868 12.457 4.5C12.457 5.12132 12.9607 5.625 13.582 5.625Z"
+                    fill="#232323"
+                  />
+                </svg> </a
+              ><a href="#!" class="info-footer__social"
+                ><svg
+                  width="26"
+                  height="14"
+                  viewBox="0 0 26 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.82609 0.611156C1.52174 0.611156 1.21739 0.611156 0.913044 0.611156C0.710145 0.611156 0.507246 0.713015 0.304348 0.713015C0.101449 0.814875 0 1.01859 0 1.22231C0 1.32417 0 1.32417 0 1.32417C0.101449 1.62975 0.202899 1.83347 0.304348 2.13905C0.913044 3.36136 1.52174 4.58367 2.13043 5.80598C3.04348 7.33387 3.95652 8.86176 5.07246 10.2878C5.57971 10.899 6.18841 11.5101 6.7971 12.1213C7.50725 12.6306 8.21739 13.1399 9.02899 13.5473C10.1449 14.0566 10.4493 13.9547 11.6667 13.8529C12.0725 13.8529 12.4783 13.8529 12.9855 13.8529C13.087 13.8529 14.2029 13.8529 14.3043 13.8529C14.6087 13.751 14.7101 14.0566 14.8116 13.751C14.8116 13.6492 14.913 13.4454 14.913 13.3436C14.913 13.038 15.0145 12.6306 15.0145 12.325C15.1159 12.0194 15.2174 11.7138 15.4203 11.4082C15.7246 11.0008 16.029 11.0008 16.4348 11.2045C16.7391 11.3064 16.942 11.5101 17.1449 11.8157C17.5507 12.325 18.058 12.7324 18.4638 13.2417C18.7681 13.5473 19.1739 13.751 19.5797 13.9547C19.5797 14.0566 20.4928 13.9547 20.8986 13.9547C21.2029 13.9547 21.913 13.9547 22.2174 13.9547C23.029 13.9547 22.7246 13.9547 23.5362 13.9547C23.8406 13.9547 24.5507 13.9547 24.8551 13.9547C25.2609 13.751 25.6667 13.6492 25.4638 13.2417C25.3623 13.038 25.3623 12.9361 25.2609 12.7324C24.9565 12.2231 24.5507 11.7138 24.1449 11.3064C23.5362 10.6952 22.9275 10.1859 22.4203 9.57478C22.1159 9.37106 21.913 9.06548 21.7101 8.7599C21.4058 8.45433 21.4058 8.04689 21.6087 7.74131C21.7101 7.63945 21.7101 7.43573 21.8116 7.33387C22.2174 6.72272 22.7246 6.21342 23.1304 5.60226C23.7391 4.78739 24.4493 3.97251 24.9565 3.05578C25.1594 2.64834 25.3623 2.24091 25.5652 1.83347C25.5652 1.73161 25.6667 1.52789 25.6667 1.42603C25.6667 1.12045 25.5652 0.916734 25.1594 0.814875C24.8551 0.713015 24.6522 0.713015 24.3478 0.713015C23.4348 0.713015 22.5217 0.713015 21.6087 0.713015C21.2029 0.713015 20.7971 0.713015 20.3913 0.713015C20.087 0.713015 19.8841 0.814875 19.7826 1.01859C19.6812 1.12045 19.6812 1.22231 19.6812 1.32417C19.2754 2.44462 18.7681 3.56508 18.058 4.58367C17.6522 5.29669 17.2464 5.90784 16.6377 6.519C16.4348 6.72272 16.2319 6.92643 15.9275 7.02829C15.8261 7.13015 15.6232 7.0283 15.5217 6.92644C15.4203 6.82458 15.3188 6.72272 15.3188 6.62086C15.1159 6.31528 15.1159 6.0097 15.1159 5.70412C15.1159 5.19483 15.1159 4.78739 15.1159 4.27809C15.1159 3.87066 15.1159 3.36136 15.1159 2.95392C15.1159 2.7502 15.1159 2.54648 15.1159 2.44462C15.1159 2.03719 15.1159 1.52789 15.1159 1.12045C15.0145 0.611156 14.8116 0.305578 14.3043 0.203719C13.6957 0 13.1884 0 12.6812 0C11.971 0 11.1594 0 10.4493 0C10.1449 0 9.73913 0.101859 9.43478 0.203719C9.13044 0.305578 8.01449 0.407437 7.81159 0.713015C7.71015 0.814875 8.62319 0.814875 8.62319 0.916734C8.62319 1.01859 8.62319 1.01859 8.72464 1.12045C8.82609 1.12045 7.71015 2.03719 7.91304 2.13905C8.31884 2.24091 9.73913 1.62975 9.94203 2.03719C10.0435 2.34276 10.0435 2.54648 10.1449 2.85206C10.1449 3.2595 10.2464 3.56508 10.2464 3.97251C10.2464 4.68553 10.2464 5.5004 10.1449 6.21342C10.1449 6.519 10.0435 6.72272 9.84058 6.92644C9.53623 6.92644 9.43478 7.02829 9.23189 7.02829C9.13044 7.02829 8.92754 6.92644 8.82609 6.82458C8.52174 6.72272 8.31884 6.41714 8.11594 6.21342C7.50725 5.29669 6.89855 4.37995 6.39131 3.46322C6.08696 2.7502 5.78261 2.03719 5.37681 1.22231C5.17391 0.814875 4.86957 0.611156 4.36232 0.611156C3.55073 0.611156 2.73913 0.611156 1.82609 0.611156Z"
+                    fill="white"
+                  />
+                </svg> </a
+              ><a href="#!" class="info-footer__social"
+                ><svg
+                  width="28"
+                  height="19"
+                  viewBox="0 0 28 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.6664 2.75261H17.4998V0.285645H25.6664V2.75261ZM27.68 15.0874C27.1644 16.6873 25.3129 18.7879 21.7289 18.7879C18.1426 18.7879 15.2377 16.6552 15.2377 11.7879C15.2377 6.96495 17.9501 4.48565 21.6146 4.48565C25.2102 4.48565 27.4059 6.68372 27.8854 9.94504C27.9764 10.5692 28.0125 11.4104 27.9962 12.5847H18.6315C18.7831 16.5454 22.6949 16.67 23.9841 15.0874H27.68ZM18.7131 10.1535H24.5056C24.3831 8.2453 23.1803 7.4164 21.6158 7.4164C19.9055 7.4164 18.9593 8.36372 18.7131 10.1535ZM7.54359 18.7731H0V0.311548H8.11175C14.5003 0.41146 14.6217 7.02662 11.285 8.82998C15.3228 10.3842 15.4582 18.7731 7.54359 18.7731ZM3.49996 7.68654H7.68125C10.6072 7.68654 11.0715 3.98609 7.31725 3.98609H3.49996V7.68654ZM7.45609 11.387H3.49996V15.1072H7.39775C10.9619 15.1072 10.7437 11.387 7.45609 11.387Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+            <a href="/" class="info-footer__download" download=""
+              >Скачать бриф</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom bottom-footer">
+    <div class="bottom-footer__container">
+      <div class="bottom-footer__body">
+        <div class="bottom-footer__copyright">
+          © 2022 TopDesign All rights reserved
+        </div>
+        <a href="#!" class="bottom-footer__privacy"
+          >Политика конфиденциальности</a
+        >
+        <div class="bottom-footer__address">г.Москва, ул.Смоленская 13к2</div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /.footer -->
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
