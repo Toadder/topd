@@ -413,6 +413,10 @@ body.lock {
   text-fill-color: transparent;
   opacity: 0.5;
 }
+.contacts__body {
+  position: relative;
+  z-index: 2;
+}
 .contacts__title {
   margin-bottom: 190px;
   position: relative;
@@ -533,6 +537,8 @@ body.lock {
 .contacts__socials {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
 }
 .contacts__social {
   transition: opacity 0.35s ease 0s;
@@ -2494,6 +2500,10 @@ body.lock {
 }
 .portfolio__container {
   max-width: 1300px;
+}
+.portfolio__body {
+  position: relative;
+  z-index: 2;
 }
 .portfolio__title {
   margin-bottom: 90px;
