@@ -197,11 +197,11 @@ body.lock {
 }
 
 .btn {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   background: radial-gradient(171.67% 2592.83% at -2.48% -17.5%, #f18b39 0%, #dd5d4b 100%);
-  padding: 2.5px;
+  padding: 2px;
   border-radius: 5px;
   display: inline-block;
 }
@@ -269,6 +269,29 @@ body.lock {
   }
 }
 
+.page-title {
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 1.3142857143;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media (max-width: 1200px) {
+  .page-title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 991.98px) {
+  .page-title {
+    font-size: 55px;
+  }
+}
+@media (max-width: 767.98px) {
+  .page-title {
+    font-size: 34px;
+  }
+}
+
 .slogan {
   font-weight: 900;
   font-size: 200px;
@@ -299,8 +322,11 @@ body.lock {
   height: 100%;
   z-index: 10;
   backdrop-filter: blur(10px);
-  border-right: 1px solid;
+  border-right: 1px solid transparent;
   transition: border-color 0.35s ease 0s;
+}
+.progress.active .progress__body {
+  display: flex;
 }
 @media (max-width: 1600px) {
   .progress {
@@ -324,7 +350,7 @@ body.lock {
   right: -5.5px;
   top: 50%;
   transform: translate(0px, -50%);
-  display: flex;
+  display: none;
   align-items: center;
 }
 .progress__number {
@@ -752,7 +778,7 @@ body.lock {
   left: 0;
   width: 100%;
   z-index: 11;
-  transition: padding 0.35s ease 0s, background-color 0.2s ease 0s;
+  transition: padding 0.25s ease-in 0s, background-color 0.25s ease-in 0s;
 }
 .header.scrolled {
   padding: 10px 0;
@@ -1264,30 +1290,18 @@ body.lock {
   }
 }
 .intro__title {
-  font-weight: 700;
-  font-size: 70px;
-  line-height: 1.3142857143;
-  text-transform: uppercase;
-  color: #ffffff;
   margin-bottom: 60px;
   position: relative;
   z-index: 2;
 }
-@media (max-width: 1200px) {
-  .intro__title {
-    font-size: 60px;
-  }
-}
 @media (max-width: 991.98px) {
   .intro__title {
-    font-size: 55px;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 767.98px) {
   .intro__title {
     margin-bottom: 20px;
-    font-size: 34px;
   }
 }
 .intro__btn {
@@ -1667,9 +1681,6 @@ body.lock {
 
 .reason__fluid {
   padding: 135px 0;
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size: 55% 100%;
   position: relative;
 }
 @media (max-width: 1200px) {
@@ -1956,6 +1967,7 @@ body.lock {
   right: 0;
   z-index: -1;
   opacity: 0.08;
+  max-height: 100%;
 }
 .item-service__img img {
   max-width: 100%;
