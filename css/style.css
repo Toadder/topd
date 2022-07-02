@@ -1356,9 +1356,6 @@ body.lock {
   padding: 240px 0 90px;
   position: relative;
   overflow: hidden;
-  background-image: url("../img/index/intro/grid.svg"), url("../img/index/intro/grid_double.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: right top, right 20px bottom 25px;
 }
 @media (max-width: 1200px) {
   .intro {
@@ -2831,6 +2828,227 @@ body.lock {
   .approach__text {
     font-size: 16px;
   }
+}
+
+.create {
+  background-color: #232323;
+  position: relative;
+  overflow: hidden;
+}
+.create__slogan {
+  z-index: 1;
+  top: -60px;
+  right: -30px;
+  background: radial-gradient(111.7% 309.51% at 4.07% 11.77%, #393939 0%, rgba(56, 56, 56, 0) 89.32%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  opacity: 0.5;
+}
+.create__top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.create__top-center {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  z-index: 1;
+}
+@media (max-width: 767.98px) {
+  .create__top-center {
+    display: none;
+  }
+}
+.create__top-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.create__container {
+  max-width: 100%;
+  padding: 0;
+}
+.create__body {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .create__body {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .create__body {
+    display: block;
+  }
+}
+.create__content {
+  flex: 0 0 47.4%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 221px 0 126px 15px;
+}
+@media (max-width: 1200px) {
+  .create__content {
+    padding: 100px 0 100px 15px;
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 991.98px) {
+  .create__content {
+    padding: 70px 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .create__content {
+    padding: 45px 15px;
+  }
+}
+.create__inner {
+  max-width: 590px;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .create__inner {
+    max-width: 100%;
+  }
+}
+.create__inner-slogan {
+  z-index: 1;
+  left: -215px;
+  top: -45px;
+}
+@media (max-width: 1600px) {
+  .create__inner-slogan {
+    left: -15px;
+    font-size: 150px;
+  }
+}
+.create__inner-slogan span {
+  display: block;
+}
+.create__inner-slogan span:first-child {
+  background: radial-gradient(138.72% 384.7% at 4.07% 11.77%, #3a3a3a 0%, rgba(47, 47, 47, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  opacity: 0.8;
+}
+.create__inner-slogan span:last-child {
+  background: radial-gradient(111.7% 309.51% at 4.07% 11.77%, rgba(65, 65, 65, 0.71) 0%, rgba(56, 56, 56, 0) 98.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  opacity: 0.8;
+}
+.create__title {
+  margin-bottom: 47px;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1200px) {
+  .create__title {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 991.98px) {
+  .create__title {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .create__title {
+    margin-bottom: 20px;
+  }
+}
+.create__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 991.98px) {
+  .create__text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767.98px) {
+  .create__text {
+    font-size: 16px;
+  }
+}
+.create__img {
+  flex: 0 0 52.6%;
+  position: relative;
+  z-index: 2;
+  max-height: 752px;
+}
+.create__img > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+}
+@media (max-width: 1200px) {
+  .create__img {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 991.98px) {
+  .create__img {
+    display: none;
+  }
+}
+.create__circle {
+  position: absolute;
+  display: block;
+}
+@media (min-width: 1921px) {
+  .create__circle {
+    display: none;
+  }
+}
+@media (max-width: 1600px) {
+  .create__circle {
+    display: none;
+  }
+}
+.create__circle_lg {
+  top: 55%;
+  right: 10%;
+}
+@media (max-width: 1750px) {
+  .create__circle_lg {
+    right: 5%;
+    top: 60%;
+  }
+}
+.create__circle_md {
+  top: 40%;
+  left: 23%;
+}
+.create__circle_sm {
+  bottom: 5%;
+  left: 25%;
+}
+.create__circle_tn {
+  right: 37.5%;
+  bottom: 1.5%;
 }
 
 .service-wrapper .project__body {
