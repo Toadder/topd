@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Главная</title>
   <!-- STYLES -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -80,41 +81,42 @@
   </div>
 </header>
 <!-- /.header -->
- <!-- .progress -->
-<div class="progress" style="display: none;">
-  <div class="progress__body">
-    <div class="progress__number"></div>
-    <div class="progress__element"></div>
-  </div>
-</div>
-<!-- /.progress -->
+
 
       <!-- .main -->
       <main class="main page">
         <div class="page__wrapper">
           <!-- .intro -->
-<section class="intro page__screen" data-section="dark">
-  <div class="intro__top-slogan slogan">design</div>
-  <div class="intro__bottom-slogan slogan">top</div>
-  <div class="intro__top-left-corner">
-    <img src="img/index/intro/top_left_corner.svg" alt="" />
+<section class="intro page__screen">
+  <div class="intro__top-slogan slogan" data-aos="fade-down">design</div>
+  <div class="intro__bottom-slogan slogan" data-aos="fade-left">top</div>
+  <div class="intro__top-left-corner" data-aos="fade-in">
+    <img class="swiper-lazy" data-src="img/index/intro/top_left_corner.svg" alt="" />
   </div>
-  <div class="intro__top-center">
-    <img src="img/index/intro/top_center.svg" alt="" />
+  <div class="intro__top-center" data-aos="fade-in">
+    <img class="swiper-lazy" data-src="img/index/intro/top_center.svg" alt="" />
   </div>
-  <div class="intro__top-right-corner">
-    <img src="img/index/intro/top_right_corner.svg" alt="" />
+  <div class="intro__top-right-corner" data-aos="fade-in">
+    <img class="swiper-lazy" data-src="img/index/intro/top_right_corner.svg" alt="" />
   </div>
-  <div class="intro__bottom-right-corner">
-    <img src="img/index/intro/bottom_right_corner.svg" alt="" />
+  <div class="intro__bottom-right-corner" data-aos="fade-in">
+    <img class="swiper-lazy" data-src="img/index/intro/bottom_right_corner.svg" alt="" />
   </div>
-  <div class="intro__bottom-left-corner">
-    <img src="img/index/intro/bottom_left_corner.svg" alt="" />
+  <div class="intro__bottom-left-corner" data-aos="fade-in">
+    <img class="swiper-lazy" data-src="img/index/intro/bottom_left_corner.svg" alt="" />
   </div>
+  <!-- .progress -->
+<div class="progress progress_dark intro__progress" data-aos="fade-right">
+  <div class="progress__body intro__progress-body">
+    <div class="progress__number intro__progress-number">01</div>
+    <div class="progress__element intro__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
   <div class="page__inner intro__inner">
     <div class="intro__container">
-      <div class="intro__body page__body">
-        <div class="intro__content">
+    <div class="intro__body page__body">
+        <div class="intro__content" data-aos="fade-right">
           <div class="intro__content-slogan slogan">
             <span>top</span>
             <span>design</span>
@@ -187,19 +189,19 @@
             </a>
           </div>
         </div>
-        <div class="intro__img">
+        <div class="intro__img" data-aos="fade-left">
           <img src="img/index/intro/1.png" alt="" />
           <div class="intro__circle intro__circle_lg">
-            <img src="img/index/intro/circle.svg" alt="" />
+            <img class="swiper-lazy" data-src="img/index/intro/circle.svg" alt="" />
           </div>
           <div class="intro__circle intro__circle_md">
-            <img src="img/index/intro/circle_md.svg" alt="" />
+            <img class="swiper-lazy" data-src="img/index/intro/circle_md.svg" alt="" />
           </div>
           <div class="intro__circle intro__circle_sm">
-            <img src="img/index/intro/circle_sm.svg" alt="" />
+            <img class="swiper-lazy" data-src="img/index/intro/circle_sm.svg" alt="" />
           </div>
           <div class="intro__circle intro__circle_tn">
-            <img src="img/index/intro/circle_tn.svg" alt="" />
+            <img class="swiper-lazy" data-src="img/index/intro/circle_tn.svg" alt="" />
           </div>
         </div>
       </div>
@@ -209,13 +211,20 @@
 <!-- /.intro -->
 
           <!-- .reason -->
-<section class="reason page__screen" data-section="light">
-  <div class="reason__slogan slogan">design</div>
-
+<section class="reason page__screen">
+  <div class="reason__slogan slogan" data-aos="fade-up">design</div>
+<!-- .progress -->
+<div class="progress progress_light reason__progress" data-aos="fade-right">
+  <div class="progress__body reason__progress-body">
+    <div class="progress__number reason__progress-number">02</div>
+    <div class="progress__element reason__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
   <div class="page__inner reason__inner">
     <div class="reason__container">
       <div class="reason__body page__body">
-        <div class="reason__content">
+        <div class="reason__content" data-aos="fade-down">
           <h2 class="reason__title title">
             6 причин сотрудничать с <b>TopDesign</b>
           </h2>
@@ -235,7 +244,7 @@
           </a>
         </div>
         <div class="reason__grid">
-          <div class="reason__item item-reason">
+          <div class="reason__item item-reason" data-aos="zoom-in">
             <div class="item-reason__icon">
               <img src="img/index/reason/1.svg" alt="" />
             </div>
@@ -245,7 +254,7 @@
               несдвигаемых дедлайнов
             </p>
           </div>
-          <div class="reason__item item-reason">
+          <div class="reason__item item-reason" data-aos="zoom-in">
             <div class="item-reason__icon">
               <img src="img/index/reason/2.svg" alt="" />
             </div>
@@ -255,7 +264,7 @@
               несдвигаемых дедлайнов
             </p>
           </div>
-          <div class="reason__item item-reason">
+          <div class="reason__item item-reason" data-aos="zoom-in">
             <div class="item-reason__icon">
               <img src="img/index/reason/3.svg" alt="" />
             </div>
@@ -265,7 +274,7 @@
               несдвигаемых дедлайнов
             </p>
           </div>
-          <div class="reason__item item-reason">
+          <div class="reason__item item-reason" data-aos="zoom-in">
             <div class="item-reason__icon">
               <img src="img/index/reason/4.svg" alt="" />
             </div>
@@ -275,7 +284,7 @@
               несдвигаемых дедлайнов
             </p>
           </div>
-          <div class="reason__item item-reason">
+          <div class="reason__item item-reason" data-aos="zoom-in">
             <div class="item-reason__icon">
               <img src="img/index/reason/5.svg" alt="" />
             </div>
@@ -285,7 +294,7 @@
               несдвигаемых дедлайнов
             </p>
           </div>
-          <div class="reason__item item-reason">
+          <div class="reason__item item-reason" data-aos="zoom-in"0>
             <div class="item-reason__icon">
               <img src="img/index/reason/6.svg" alt="" />
             </div>
@@ -303,16 +312,24 @@
 <!-- /.reason -->
 
           <!-- .service -->
-<section class="service page__screen" data-section="dark">
-  <div class="service__top-circle">
+<section class="service page__screen">
+  <div class="service__top-circle" data-aos="fade-in">
     <img src="img/index/service/top_circle.svg" alt="" />
   </div>
+  <!-- .progress -->
+<div class="progress progress_dark service__progress" data-aos="fade-right">
+  <div class="progress__body service__progress-body">
+    <div class="progress__number service__progress-number">03</div>
+    <div class="progress__element service__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
   <div class="page__inner service__inner">
     <div class="service__container">
       <div class="service__body page__body">
-        <h2 class="service__title title">наши услуги</h2>
+        <h2 class="service__title title" data-aos="fade-up">наши услуги</h2>
         <div class="service__grid">
-          <div class="service__item item-service">
+          <div class="service__item item-service" data-aos="fade-left">
             <div class="item-service__img">
               <img src="img/index/service/1.svg" alt="" />
             </div>
@@ -325,7 +342,7 @@
             </p>
             <a href="#!" class="item-service__link">подробнее</a>
           </div>
-          <div class="service__item item-service">
+          <div class="service__item item-service" data-aos="fade-up">
             <div class="item-service__img">
               <img src="img/index/service/2.svg" alt="" />
             </div>
@@ -338,7 +355,7 @@
             </p>
             <a href="#!" class="item-service__link">подробнее</a>
           </div>
-          <div class="service__item item-service">
+          <div class="service__item item-service" data-aos="fade-right">
             <div class="item-service__img">
               <img src="img/index/service/3.svg" alt="" />
             </div>
@@ -351,7 +368,7 @@
             </p>
             <a href="#!" class="item-service__link">подробнее</a>
           </div>
-          <div class="service__item item-service">
+          <div class="service__item item-service" data-aos="fade-left">
             <div class="item-service__img">
               <img src="img/index/service/4.svg" alt="" />
             </div>
@@ -364,7 +381,7 @@
             </p>
             <a href="#!" class="item-service__link">подробнее</a>
           </div>
-          <div class="service__item item-service">
+          <div class="service__item item-service" data-aos="fade-up">
             <div class="item-service__img">
               <img src="img/index/service/5.svg" alt="" />
             </div>
@@ -377,7 +394,7 @@
             </p>
             <a href="#!" class="item-service__link">подробнее</a>
           </div>
-          <div class="service__item item-service">
+          <div class="service__item item-service" data-aos="fade-right">
             <div class="item-service__img">
               <img src="img/index/service/6.svg" alt="" />
             </div>
@@ -394,23 +411,33 @@
       </div>
     </div>
   </div>
-  <div class="service__bg">
+  <div class="service__bg" data-aos="fade-in">
     <img src="img/index/service/bg.png" alt="" />
   </div>
-  <div class="service__bottom-circle">
+  <div class="service__bottom-circle" data-aos="fade-in">
     <img src="img/index/service/bottom_circle.svg" alt="" />
   </div>
 </section>
 <!-- /.service -->
 
           <!-- .project -->
-<section class="project page__screen" data-section="light">
-  <div class="project__slogan slogan">DESIGN</div>
+<section class="project page__screen">
+  <div class="project__slogan slogan" data-aos="fade-down">DESIGN</div>
+  <!-- .progress -->
+<div class="progress progress_light project__progress" data-aos="fade-right">
+  <div class="progress__body project__progress-body">
+    <div class="progress__number project__progress-number">04</div>
+    <div class="progress__element project__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
   <div class="page__inner project__inner">
     <div class="project__container">
       <div class="project__body page__body">
-        <h2 class="project__title title">недавнИЕ ПРОЕКТЫ</h2>
-        <div class="project__outer">
+        <h2 class="project__title title" data-aos="fade-right">
+          недавнИЕ ПРОЕКТЫ
+        </h2>
+        <div class="project__outer" data-aos="fade-left">
           <div class="project__slider swiper">
             <div class="project__wrapper swiper-wrapper">
               <div class="project__slide slide-project swiper-slide">
@@ -487,9 +514,11 @@
           </div>
           <div class="project__pagination"></div>
         </div>
-        <a href="#!" class="project__btn btn">
-          <span>смотреть все работы</span>
-        </a>
+        <div class="project__flex">
+          <a href="#!" class="project__btn btn" data-aos="fade-up">
+            <span>смотреть все работы</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -497,12 +526,20 @@
 <!-- /.project -->
 
           <!-- .trust -->
-<section class="trust page__screen" data-section="light">
-  <div class="trust__slogan slogan">top</div>
+<section class="trust page__screen">
+  <div class="trust__slogan slogan" data-aos="fade-up">top</div>
+  <!-- .progress -->
+<div class="progress progress_light trust__progress" data-aos="fade-right">
+  <div class="progress__body trust__progress-body">
+    <div class="progress__number trust__progress-number">05</div>
+    <div class="progress__element trust__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
   <div class="page__inner trust__inner">
     <div class="trust__container">
       <div class="trust__body page__body">
-        <div class="trust__content">
+        <div class="trust__content" data-aos="fade-down">
           <h2 class="trust__title title">нам доверяют</h2>
           <div class="trust__info">
             <p>
@@ -521,76 +558,76 @@
           </a>
         </div>
         <div class="trust__grid">
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-up">
             <img src="img/index/trust/1.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-down">
             <img src="img/index/trust/2.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-up">
             <img src="img/index/trust/3.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-down">
             <img src="img/index/trust/4.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-up">
             <img src="img/index/trust/5.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-down">
             <img src="img/index/trust/6.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-up">
             <img src="img/index/trust/7.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-down">
             <img src="img/index/trust/8.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-up">
             <img src="img/index/trust/9.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-down">
             <img src="img/index/trust/10.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-up">
             <img src="img/index/trust/3.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-down">
             <img src="img/index/trust/4.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-up">
             <img src="img/index/trust/11.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-down">
             <img src="img/index/trust/2.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-up">
             <img src="img/index/trust/5.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-down">
             <img src="img/index/trust/6.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-up">
             <img src="img/index/trust/1.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-down">
             <img src="img/index/trust/2.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-up">
             <img src="img/index/trust/3.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-down">
             <img src="img/index/trust/4.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-up">
             <img src="img/index/trust/5.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-down">
             <img src="img/index/trust/6.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-up">
             <img src="img/index/trust/7.png" alt="" />
           </div>
-          <div class="trust__item">
+          <div class="trust__item" data-aos="fade-down">
             <img src="img/index/trust/8.png" alt="" />
           </div>
         </div>
@@ -601,28 +638,36 @@
 <!-- /.trust -->
 
           <!-- .footer -->
-<footer class="footer page__screen" data-section="dark">
-  <div class="footer__slogan slogan">design</div>
-  <div class="footer__top-circle">
+<footer class="footer page__screen">
+  <div class="footer__slogan slogan" data-aos="fade-down">design</div>
+  <!-- .progress -->
+<div class="progress progress_dark footer__progress" data-aos="fade-right">
+  <div class="progress__body footer__progress-body">
+    <div class="progress__number footer__progress-number">06</div>
+    <div class="progress__element footer__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
+  <div class="footer__top-circle" data-aos="fade-in">
     <img src="img/index/footer/top_circle.svg" alt="" />
   </div>
   <div class="page__inner footer__inner">
     <div class="footer__wrapper page__body">
       <div class="footer__top top-footer">
-        <div class="top-footer__bg">
+        <div class="top-footer__bg" data-aos="fade-in">
           <img src="img/index/footer/bg.svg" alt="" />
         </div>
-        <div class="top-footer__bottom-circle">
+        <div class="top-footer__bottom-circle" data-aos="fade-in">
           <img src="img/index/footer/bottom_circle.svg" alt="" />
         </div>
         <div class="top-footer__container">
           <div class="top-footer__body">
-            <h2 class="top-footer__title title">
+            <h2 class="top-footer__title title" data-aos="fade-right">
               расскажите <br />
               о вашем проекте
             </h2>
             <div class="top-footer__flex">
-              <form class="top-footer__form form-footer">
+              <form class="top-footer__form form-footer" data-aos="fade-right">
                 <div class="form-footer__flex">
                   <div class="form-footer__inputs">
                     <input
@@ -687,7 +732,7 @@
                   <span>Отправить</span>
                 </button>
               </form>
-              <div class="top-footer__info info-footer">
+              <div class="top-footer__info info-footer" data-aos="fade-left">
                 <div class="info-footer__logo">
                   <img src="img/logo.png" alt="Top Design" />
                 </div>
@@ -790,7 +835,7 @@
           </div>
         </div>
       </div>
-      <div class="footer__bottom bottom-footer">
+      <div class="footer__bottom bottom-footer" data-aos="fade-up">
         <div class="bottom-footer__container">
           <div class="bottom-footer__body">
             <div class="bottom-footer__copyright">
@@ -814,10 +859,10 @@
         <div class="page__scroll"></div>
       </main>
       <!-- /.main -->
-
     </div>
 
     <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
   </body>

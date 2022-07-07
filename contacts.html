@@ -76,18 +76,18 @@
 </header>
 <!-- /.header -->
 
-      <!-- .progress -->
-<div class="progress" style="display: none;">
-  <div class="progress__body">
-    <div class="progress__number"></div>
-    <div class="progress__element"></div>
-  </div>
-</div>
-<!-- /.progress -->
 
       <!-- .main -->
       <main class="main">
         <section class="contacts">
+          <!-- .progress -->
+<div class="progress progress_off contacts__progress" data-aos="fade-right">
+  <div class="progress__body contacts__progress-body">
+    <div class="progress__number contacts__progress-number">00</div>
+    <div class="progress__element contacts__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
           <div class="contacts__top-center">
             <img src="img/contacts/top_center.svg" alt="" />
           </div>
@@ -218,28 +218,36 @@
       <!-- /.main -->
 
       <!-- .footer -->
-<footer class="footer page__screen" data-section="dark">
-  <div class="footer__slogan slogan">design</div>
-  <div class="footer__top-circle">
+<footer class="footer page__screen">
+  <div class="footer__slogan slogan" data-aos="fade-down">design</div>
+  <!-- .progress -->
+<div class="progress progress_dark footer__progress" data-aos="fade-right">
+  <div class="progress__body footer__progress-body">
+    <div class="progress__number footer__progress-number">06</div>
+    <div class="progress__element footer__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
+  <div class="footer__top-circle" data-aos="fade-in">
     <img src="img/index/footer/top_circle.svg" alt="" />
   </div>
   <div class="page__inner footer__inner">
     <div class="footer__wrapper page__body">
       <div class="footer__top top-footer">
-        <div class="top-footer__bg">
+        <div class="top-footer__bg" data-aos="fade-in">
           <img src="img/index/footer/bg.svg" alt="" />
         </div>
-        <div class="top-footer__bottom-circle">
+        <div class="top-footer__bottom-circle" data-aos="fade-in">
           <img src="img/index/footer/bottom_circle.svg" alt="" />
         </div>
         <div class="top-footer__container">
           <div class="top-footer__body">
-            <h2 class="top-footer__title title">
+            <h2 class="top-footer__title title" data-aos="fade-right">
               расскажите <br />
               о вашем проекте
             </h2>
             <div class="top-footer__flex">
-              <form class="top-footer__form form-footer">
+              <form class="top-footer__form form-footer" data-aos="fade-right">
                 <div class="form-footer__flex">
                   <div class="form-footer__inputs">
                     <input
@@ -304,7 +312,7 @@
                   <span>Отправить</span>
                 </button>
               </form>
-              <div class="top-footer__info info-footer">
+              <div class="top-footer__info info-footer" data-aos="fade-left">
                 <div class="info-footer__logo">
                   <img src="img/logo.png" alt="Top Design" />
                 </div>
@@ -407,7 +415,7 @@
           </div>
         </div>
       </div>
-      <div class="footer__bottom bottom-footer">
+      <div class="footer__bottom bottom-footer" data-aos="fade-up">
         <div class="bottom-footer__container">
           <div class="bottom-footer__body">
             <div class="bottom-footer__copyright">

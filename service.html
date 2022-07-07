@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Создание сайтов</title>
   <!-- STYLES -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -80,20 +81,13 @@
   </div>
 </header>
 <!-- /.header -->
- <!-- .progress -->
-<div class="progress" style="display: none;">
-  <div class="progress__body">
-    <div class="progress__number"></div>
-    <div class="progress__element"></div>
-  </div>
-</div>
-<!-- /.progress -->
+
 
       <!-- .main -->
       <main class="main page">
         <div class="page__wrapper">
           <!-- .create -->
-<section class="create page__screen" data-section="dark">
+<section class="create page__screen">
   <div class="create__slogan slogan">design</div>
   <div class="create__top-left">
     <img src="img/service/create/top_left_corner.svg" alt="" />
@@ -104,6 +98,14 @@
   <div class="create__top-right">
     <img src="img/service/create/top_right_corner.svg" alt="" />
   </div>
+  <!-- .progress -->
+<div class="progress progress_dark create__progress" data-aos="fade-right">
+  <div class="progress__body create__progress-body">
+    <div class="progress__number create__progress-number">01</div>
+    <div class="progress__element create__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
   <div class="page__inner">
     <div class="create__container">
       <div class="create__body page__body">
@@ -147,7 +149,15 @@
 <!-- /.create -->
 
           <!-- .approach -->
-<section class="approach page__screen" data-section="light">
+<section class="approach page__screen">
+  <!-- .progress -->
+<div class="progress progress_light approach__progress" data-aos="fade-right">
+  <div class="progress__body approach__progress-body">
+    <div class="progress__number approach__progress-number">02</div>
+    <div class="progress__element approach__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
   <div class="page__inner approach__inner">
     <div class="approach__container">
       <div class="approach__body page__body">
@@ -256,13 +266,21 @@
 <!-- /.approach -->
 
           <!-- .price -->
-<section class="price page__screen" data-section="dark">
+<section class="price page__screen">
   <div class="price__top-left-corner">
     <img src="img/service/price/top_left_corner.svg" alt="" />
   </div>
   <div class="price__bottom-right-corner">
     <img src="img/service/price/bottom_right_corner.svg" alt="" />
   </div>
+  <!-- .progress -->
+<div class="progress progress_dark price__progress" data-aos="fade-right">
+  <div class="progress__body price__progress-body">
+    <div class="progress__number price__progress-number">03</div>
+    <div class="progress__element price__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
   <div class="page__inner price__inner">
     <div class="price__container">
       <div class="price__body page__body">
@@ -352,8 +370,16 @@
 <!-- /.price -->
 
           <!-- .get -->
-<section class="get page__screen" data-section="light">
+<section class="get page__screen">
   <div class="get__slogan slogan">design</div>
+  <!-- .progress -->
+<div class="progress progress_light get__progress" data-aos="fade-right">
+  <div class="progress__body get__progress-body">
+    <div class="progress__number get__progress-number">04</div>
+    <div class="progress__element get__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
   <div class="page__inner">
     <div class="get__container">
       <div class="get__body page__body">
@@ -415,9 +441,16 @@
 <!-- /.get -->
 
           <!-- .project -->
-<section class="project page__screen" data-section="light">
+<section class="project page__screen">
   <div class="project__bottom-slogan slogan">TOP</div>
-
+<!-- .progress -->
+<div class="progress progress_light project__progress" data-aos="fade-right">
+  <div class="progress__body project__progress-body">
+    <div class="progress__number project__progress-number">05</div>
+    <div class="progress__element project__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
   <div class="page__inner project__inner">
     <div class="project__container">
       <div class="project__body page__body">
@@ -509,28 +542,36 @@
 <!-- /.project -->
 
           <!-- .footer -->
-<footer class="footer page__screen" data-section="dark">
-  <div class="footer__slogan slogan">design</div>
-  <div class="footer__top-circle">
+<footer class="footer page__screen">
+  <div class="footer__slogan slogan" data-aos="fade-down">design</div>
+  <!-- .progress -->
+<div class="progress progress_dark footer__progress" data-aos="fade-right">
+  <div class="progress__body footer__progress-body">
+    <div class="progress__number footer__progress-number">06</div>
+    <div class="progress__element footer__progress-element"></div>
+  </div>
+</div>
+<!-- /.progress -->
+  <div class="footer__top-circle" data-aos="fade-in">
     <img src="img/index/footer/top_circle.svg" alt="" />
   </div>
   <div class="page__inner footer__inner">
     <div class="footer__wrapper page__body">
       <div class="footer__top top-footer">
-        <div class="top-footer__bg">
+        <div class="top-footer__bg" data-aos="fade-in">
           <img src="img/index/footer/bg.svg" alt="" />
         </div>
-        <div class="top-footer__bottom-circle">
+        <div class="top-footer__bottom-circle" data-aos="fade-in">
           <img src="img/index/footer/bottom_circle.svg" alt="" />
         </div>
         <div class="top-footer__container">
           <div class="top-footer__body">
-            <h2 class="top-footer__title title">
+            <h2 class="top-footer__title title" data-aos="fade-right">
               расскажите <br />
               о вашем проекте
             </h2>
             <div class="top-footer__flex">
-              <form class="top-footer__form form-footer">
+              <form class="top-footer__form form-footer" data-aos="fade-right">
                 <div class="form-footer__flex">
                   <div class="form-footer__inputs">
                     <input
@@ -595,7 +636,7 @@
                   <span>Отправить</span>
                 </button>
               </form>
-              <div class="top-footer__info info-footer">
+              <div class="top-footer__info info-footer" data-aos="fade-left">
                 <div class="info-footer__logo">
                   <img src="img/logo.png" alt="Top Design" />
                 </div>
@@ -698,7 +739,7 @@
           </div>
         </div>
       </div>
-      <div class="footer__bottom bottom-footer">
+      <div class="footer__bottom bottom-footer" data-aos="fade-up">
         <div class="bottom-footer__container">
           <div class="bottom-footer__body">
             <div class="bottom-footer__copyright">

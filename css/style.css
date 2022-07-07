@@ -391,46 +391,49 @@ body.lock {
 }
 
 .progress {
-  position: fixed;
-  right: 93%;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 7%;
   min-width: 130px;
-  bottom: 0;
   height: 100%;
-  z-index: 10;
-  backdrop-filter: blur(10px);
-  border-right: 1px solid transparent;
-  transition: border-color 0.35s ease 0s, background-color 0.35s ease 0s;
+  z-index: 4;
+  background-color: transparent;
+  border-right: 2px solid;
 }
-.progress.active .progress__body {
-  display: flex;
+.progress_dark {
+  border-color: #3D3D3D;
+  background-color: #232323;
+}
+.progress_dark .progress__number {
+  color: #fff;
+}
+.progress_light {
+  background-color: white;
+  border-color: #F9F9F9;
+}
+.progress_light .progress__number {
+  color: #414040;
+}
+.progress_off {
+  border-color: #3D3D3D;
+  background-color: #232323;
+}
+.progress_off .progress__body {
+  display: none;
 }
 @media (max-width: 1600px) {
   .progress {
     display: none;
   }
 }
-.progress.lighten {
-  border-color: #3d3d3d;
-  background: rgba(35, 35, 35, 0.43);
-}
-.progress.lighten .progress__number {
-  color: #fff;
-}
-.progress.darken {
-  border-color: #f9f9f9;
-  background: rgba(255, 255, 255, 0.43);
-}
-.progress.darken .progress__number {
-  color: #232323;
-}
 .progress__body {
+  display: flex;
+  align-items: center;
   position: absolute;
   right: -5.5px;
   top: 50%;
   transform: translate(0px, -50%);
-  display: none;
-  align-items: center;
 }
 .progress__number {
   font-weight: 700;
@@ -478,6 +481,7 @@ body.lock {
 }
 .clients__body {
   position: relative;
+  z-index: 6;
 }
 .clients__top-left {
   top: 0;
@@ -485,6 +489,7 @@ body.lock {
   transform: translate(-50%, 0);
   overflow: hidden;
   position: absolute;
+  z-index: 5;
 }
 .clients__title {
   color: white;
@@ -521,7 +526,7 @@ body.lock {
   font-weight: 300;
   font-size: 20px;
   line-height: 1.2;
-  max-width: 545px;
+  max-width: 675px;
   color: #ffffff;
   position: relative;
   z-index: 2;
@@ -1010,7 +1015,7 @@ body.lock {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 5;
 }
 .team__top-center {
   position: absolute;
@@ -1032,14 +1037,9 @@ body.lock {
 }
 .team__container {
   max-width: 100%;
-  padding: 0 0 0 15px;
+  padding: 0;
   width: 100%;
   height: 100%;
-}
-@media (max-width: 991.98px) {
-  .team__container {
-    padding: 0 15px;
-  }
 }
 .team__body {
   display: flex;
@@ -1056,7 +1056,7 @@ body.lock {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  padding: 140px 0;
+  padding: 140px 0 140px 15px;
   flex: 0 0 50.9%;
   padding-right: 55px;
   position: relative;
@@ -1073,22 +1073,23 @@ body.lock {
 @media (max-width: 1200px) {
   .team__content {
     flex: 0 0 50%;
-    padding: 100px 30px 100px 0;
+    padding: 100px 30px 100px 15px;
   }
 }
 @media (max-width: 991.98px) {
   .team__content {
-    padding: 70px 0 30px;
+    padding: 70px 15px 30px;
   }
 }
 @media (max-width: 767.98px) {
   .team__content {
-    padding: 45px 0 20px;
+    padding: 45px 15px 20px;
   }
 }
 .team__inner {
   max-width: 603px;
   position: relative;
+  z-index: 6;
 }
 @media (max-width: 1200px) {
   .team__inner {
@@ -1447,6 +1448,7 @@ body.lock {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 5;
 }
 .footer__inner {
   justify-content: flex-end;
@@ -1455,7 +1457,7 @@ body.lock {
 .top-footer {
   padding: 0 0 80px;
   position: relative;
-  z-index: 2;
+  z-index: 6;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -1508,7 +1510,7 @@ body.lock {
 }
 @media (max-height: 950px) {
   .top-footer__title {
-    margin-bottom: 40px;
+    margin-bottom: 70px;
   }
 }
 @media (max-width: 991.98px) {
@@ -2255,6 +2257,7 @@ body.lock {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 5;
 }
 @media (max-width: 767.98px) {
   .intro__top-left-corner {
@@ -2296,6 +2299,7 @@ body.lock {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 5;
 }
 @media (max-width: 767.98px) {
   .intro__bottom-left-corner {
@@ -2365,7 +2369,7 @@ body.lock {
   color: #ffffff;
   margin-bottom: 20px;
   position: relative;
-  z-index: 2;
+  z-index: 6;
 }
 @media (max-width: 767.98px) {
   .intro__uptitle {
@@ -2376,7 +2380,7 @@ body.lock {
 .intro__title {
   margin-bottom: 60px;
   position: relative;
-  z-index: 2;
+  z-index: 6;
 }
 @media (max-width: 991.98px) {
   .intro__title {
@@ -2392,7 +2396,7 @@ body.lock {
   color: #fff;
   margin-bottom: 60px;
   position: relative;
-  z-index: 2;
+  z-index: 6;
 }
 .intro__btn span {
   padding-left: 46px;
@@ -2414,7 +2418,7 @@ body.lock {
   display: flex;
   align-items: center;
   position: relative;
-  z-index: 2;
+  z-index: 6;
 }
 .intro__social {
   transition: opacity 0.35s ease 0s;
@@ -2579,11 +2583,13 @@ body.lock {
     justify-content: center;
   }
 }
+.project__flex {
+  display: flex;
+  justify-content: center;
+}
 .project__btn {
   color: #414040;
   position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
 .project__btn span {
   background-color: #fff;
@@ -2946,10 +2952,11 @@ body.lock {
   position: absolute;
   top: 0;
   left: -150px;
+  z-index: 5;
 }
 .service__body {
   position: relative;
-  z-index: 1;
+  z-index: 6;
 }
 .service__title {
   color: #fff;
@@ -3294,6 +3301,7 @@ body.lock {
   position: absolute;
   left: 0;
   top: 24%;
+  z-index: 5;
 }
 @media (max-width: 767.98px) {
   .portfolio__top-2 {
@@ -3313,6 +3321,7 @@ body.lock {
 .portfolio__top-4 {
   position: absolute;
   left: 0;
+  z-index: 5;
   top: 48%;
 }
 @media (max-width: 767.98px) {
@@ -3346,7 +3355,7 @@ body.lock {
 }
 .portfolio__body {
   position: relative;
-  z-index: 2;
+  z-index: 6;
 }
 .portfolio__title {
   margin-bottom: 90px;
@@ -3677,7 +3686,7 @@ body.lock {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 5;
 }
 .create__top-center {
   position: absolute;
@@ -3776,7 +3785,7 @@ body.lock {
 .create__title {
   margin-bottom: 47px;
   position: relative;
-  z-index: 2;
+  z-index: 6;
 }
 @media (max-width: 1200px) {
   .create__title {
@@ -3799,7 +3808,7 @@ body.lock {
   line-height: 1.2;
   color: #ffffff;
   position: relative;
-  z-index: 2;
+  z-index: 6;
 }
 @media (max-width: 991.98px) {
   .create__text {
@@ -4014,6 +4023,7 @@ body.lock {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 5;
 }
 .price__bottom-right-corner {
   position: absolute;
@@ -4022,7 +4032,7 @@ body.lock {
 }
 .price__body {
   position: relative;
-  z-index: 2;
+  z-index: 6;
 }
 .price__title {
   color: #fff;
