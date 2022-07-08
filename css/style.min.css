@@ -390,7 +390,7 @@ body.lock {
   }
 }
 
-.progress {
+.sidebar {
   position: absolute;
   left: 0;
   top: 0;
@@ -401,48 +401,57 @@ body.lock {
   background-color: transparent;
   border-right: 2px solid;
 }
-.progress_dark {
-  border-color: #3D3D3D;
+.sidebar_dark {
+  border-color: #3d3d3d;
   background-color: #232323;
 }
-.progress_dark .progress__number {
+.sidebar_dark .progress__number {
   color: #fff;
 }
-.progress_light {
+.sidebar_light {
   background-color: white;
-  border-color: #F9F9F9;
+  border-color: #f9f9f9;
 }
-.progress_light .progress__number {
-  color: #414040;
-}
-.progress_off {
-  border-color: #3D3D3D;
+.sidebar_off {
+  border-color: #3d3d3d;
   background-color: #232323;
 }
-.progress_off .progress__body {
-  display: none;
-}
 @media (max-width: 1600px) {
-  .progress {
+  .sidebar {
     display: none;
   }
 }
-.progress__body {
+
+.counter {
+  width: 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 7;
+  background-color: transparent;
+  min-width: 130px;
+}
+@media (max-width: 1600px) {
+  .counter {
+    display: none;
+  }
+}
+.counter__body {
+  position: absolute;
+  top: 50%;
+  right: -5.5px;
   display: flex;
   align-items: center;
-  position: absolute;
-  right: -5.5px;
-  top: 50%;
-  transform: translate(0px, -50%);
 }
-.progress__number {
+.counter__number {
   font-weight: 700;
   font-size: 16px;
   padding-right: 22px;
-  transition: color 0.35s ease 0s;
+  transition: color 0.5s ease 0s;
   color: transparent;
 }
-.progress__element {
+.counter__element {
   background: linear-gradient(180deg, #f18b39 0%, #dd5d4b 100%);
   border-radius: 2px;
   width: 11px;
@@ -2455,6 +2464,8 @@ body.lock {
 .intro__circle {
   position: absolute;
   z-index: 2;
+  left: auto !important;
+  top: auto !important;
 }
 @media (max-width: 1600px) {
   .intro__circle {
@@ -2462,20 +2473,20 @@ body.lock {
   }
 }
 .intro__circle_lg {
-  right: 25%;
-  bottom: 17.5%;
+  right: 25% !important;
+  bottom: 17.5% !important;
 }
 .intro__circle_md {
-  top: 0;
-  right: 30%;
+  top: 0 !important;
+  right: 30% !important;
 }
 .intro__circle_sm {
-  left: 45%;
-  bottom: -30px;
+  left: 45% !important;
+  bottom: -30px !important;
 }
 .intro__circle_tn {
-  left: 0;
-  bottom: 0;
+  left: 0 !important;
+  bottom: 0 !important;
 }
 
 .project {
