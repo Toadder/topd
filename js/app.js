@@ -156,10 +156,6 @@ const sliders = () => {
     pageSlider.init();
 
     function setScrollType() {
-      if (wrapper.classList.contains("freeMode")) {
-        wrapper.classList.remove("freeMode");
-        pageSlider.enable();
-      }
       for (let index = 0; index < pageSlider.slides.length; index++) {
         const pageSlide = pageSlider.slides[index];
         const pageSlideContent = pageSlide.querySelector(".page__body");
@@ -174,7 +170,8 @@ const sliders = () => {
             lazyload();
             wrapper.classList.add("freeMode");
             scrollProgress(pageSlider);
-            pageSlider.disable();
+            if (pageSlider.realIndex !== 0) window.location.reload();
+            pageSlider.destroy(false, true);
             break;
           }
         }
@@ -312,8 +309,9 @@ const lazyload = () => {
 };
 
 window.onload = () => {
-  headerHandler();
   sliders();
+
+  headerHandler();
   ymap();
 
   // Parallax --> index.html
