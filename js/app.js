@@ -115,7 +115,8 @@ const sliders = () => {
           setScrollType();
           scrollProgress(slider);
 
-          const activeSlide = slider.slides[slider.realIndex];
+          const currentIndex = slider.realIndex;
+          const activeSlide = slider.slides[currentIndex];
           const images = activeSlide.querySelectorAll(
             "img[data-src], source[data-srcset]"
           );
@@ -123,11 +124,33 @@ const sliders = () => {
           header
             .querySelectorAll("[data-src], [data-srcset]")
             .forEach((img) => loadImage(img));
+
+          if (currentIndex + 1 < slider.slides.length) {
+            const nextSlide = slider.slides[currentIndex + 1];
+            const images = nextSlide.querySelectorAll(
+              "img[data-src], source[data-srcset]"
+            );
+
+            if (images.length > 0) {
+              images.forEach((img) => loadImage(img));
+            }
+          }
         },
         slideChange: (slider) => {
           const currentIndex = slider.realIndex;
           const currentSlide = slider.slides[currentIndex];
           const prevIndex = slider.previousIndex;
+
+          if (currentIndex + 1 < slider.slides.length) {
+            const nextSlide = slider.slides[currentIndex + 1];
+            const images = nextSlide.querySelectorAll(
+              "img[data-src], source[data-srcset]"
+            );
+
+            if (images.length > 0) {
+              images.forEach((img) => loadImage(img));
+            }
+          }
 
           if (currentIndex > prevIndex) {
             header.classList.add("scrolled");
@@ -141,11 +164,6 @@ const sliders = () => {
           setTimeout(() => {
             updateCounter(currentIndex + 1, mode);
           }, slider.params.speed / 2);
-
-          const images = currentSlide.querySelectorAll(
-            "img[data-src], source[data-srcset]"
-          );
-          images.forEach((img) => loadImage(img));
         },
         resize: () => {
           setScrollType();
